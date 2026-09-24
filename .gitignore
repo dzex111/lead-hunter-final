@@ -21,3 +21,9 @@ coverage/
 
 # local tooling
 .opencode/
+
+tsconfig.tsbuildinfo
+
+.vercel/
+.vercel
+.env*
