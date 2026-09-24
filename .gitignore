@@ -1,0 +1,23 @@
+# dependencies
+node_modules/
+
+# next.js
+.next/
+out/
+build/
+
+# env (NEVER commit secrets)
+.env
+.env*.local
+
+# misc
+*.log
+.DS_Store
+Thumbs.db
+
+# test/coverage artifacts
+var/
+coverage/
+
+# local tooling
+.opencode/

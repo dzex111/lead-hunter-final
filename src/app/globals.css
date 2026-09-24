@@ -1,0 +1,32 @@
+/*
+ * Tailwind v4 entrypoint.
+ *
+ * IMPORTANT: automatic content detection is disabled on purpose. The repo keeps
+ * real fetched HTML fixtures under tests/fixtures/raw/ (used by fingerprint
+ * tests); those fixtures contain Tailwind-style arbitrary values with image
+ * URLs that Tailwind would otherwise compile into unusable CSS rules and break
+ * the production build. We therefore scope scanning to application source only.
+ */
+@import "tailwindcss" source(none);
+@source "../**/*.{ts,tsx}";
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, "Noto Sans Arabic", "Cairo", "Tajawal", Arial, ui-sans-serif, system-ui, sans-serif;
+  line-height: 1.8;
+}
+
+h1, h2, h3 {
+  line-height: 1.6;
+}
+
+code,
+pre,
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  direction: ltr;
+  unicode-bidi: embed;
+}
